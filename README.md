@@ -56,7 +56,7 @@ In the analysis pdf, you can have a detailed analysis of the algorithms used and
 
 ### Important
 
-The implementation used the Sci-kit library mainly for the clustering and classification methods, along with a set of other libraries. 
+The implementation used the [Sci-kit library](https://scikit-learn.org/stable/index.html) mainly for the clustering and classification methods, along with a set of other libraries. 
 Make sure to install them by:
 
     sudo pip3 install -U <library name>
