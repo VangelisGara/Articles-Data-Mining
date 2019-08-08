@@ -36,7 +36,7 @@ SupportVectorMachines = Pipeline([
     ('vectorizer',  TfidfVectorizer(stop_words='english')),
     ('classifier',  LinearSVC()) ])
 
-RandomForrest = Pipeline([ 
+RandomForrest = Pipeline([
     ('vectorizer' , TfidfVectorizer(stop_words='english')),
     ('classifier',  RandomForestClassifier(n_estimators = 20) ) ])
 
@@ -65,9 +65,9 @@ for ckey,cvalue in classification_methods.items():
 
 # print(final_results)
 
-# -----------------------------------------------------------------------------------------------------------------------------------------------------#
+# -----------------------------------------------------------------------------#
 # KNN Implementation
-# -----------------------------------------------------------------------------------------------------------------------------------------------------#
+# -----------------------------------------------------------------------------#
 
 import collections
 from sklearn.model_selection import train_test_split
@@ -205,9 +205,3 @@ Tree = Pipeline([
 
 result = model_selection.cross_val_score(Tree, X, Y, cv= kfold, scoring='accuracy')
 # print(result)
-
-
-
-
-
-
